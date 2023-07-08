@@ -5,6 +5,10 @@ from ia.testopenia import Document, Profe
 
 app = FastAPI()
 
+#correr la aplicacion en cmd con:
+#uvicorn main:app --port= #puerto
+#para cambiar el puerto.
+
 @app.get("/")
 def index():
     return "probando servidor..."
